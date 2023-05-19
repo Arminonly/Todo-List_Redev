@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Button, Form } from 'antd';
-import s from '../styles.module.css';
+import s from '../../styles.module.css';
 
 const Btn = () => {
   return (

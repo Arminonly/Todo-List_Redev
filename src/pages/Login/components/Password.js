@@ -1,6 +1,6 @@
 import { Form, Input } from 'antd';
 import { LockFilled } from '@ant-design/icons';
-import s from '../styles.module.css';
+import s from '../../styles.module.css';
 
 const Password = () => {
   return (

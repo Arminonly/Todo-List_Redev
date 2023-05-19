@@ -1,6 +1,6 @@
 import { Form, Input } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
-import s from '../styles.module.css';
+import s from '../../styles.module.css';
 
 const Email = () => {
   return (

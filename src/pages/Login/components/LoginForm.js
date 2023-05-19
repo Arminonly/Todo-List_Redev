@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form, Modal } from 'antd';
-import Email from './Email';
+
 import Password from './Password';
 import Btn from './Btn';
+import Email from './Email';
 
 const LoginForm = () => {
   const [isOpen, setIsOpen] = useState(false);
