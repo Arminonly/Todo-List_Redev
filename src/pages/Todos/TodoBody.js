@@ -9,7 +9,8 @@ const TodoBody = ({ todos, editTodo, deleteTodo, completedTodo }) => {
             <div className={s.listItems} key={todo.id}>
               <p>
                 <span>
-                  <input className={s.span}
+                  <input
+                    className={s.span}
                     type="checkbox"
                     onChange={() => completedTodo(todo.id)}
                   />
@@ -43,8 +44,7 @@ const TodoBody = ({ todos, editTodo, deleteTodo, completedTodo }) => {
           );
         })
       ) : (
-        <div
-        >
+        <div>
           <h2>Задач нет</h2>
         </div>
       )}

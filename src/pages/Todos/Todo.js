@@ -26,7 +26,7 @@ const Todo = () => {
     const deleteItem = [...todos].filter((todo) => todo.id !== id);
     setTodos(deleteItem);
   };
-  
+
   const completedTodo = (id) => {
     const doneTodo = [...todos];
     doneTodo.map((todo) => {
