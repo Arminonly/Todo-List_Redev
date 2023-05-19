@@ -1,0 +1,21 @@
+
+body{
+  background:#4bd291;
+}
+
+.wrapper {
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+  height: 100vh;
+  background: #fff;
+}
+.done {
+  text-decoration: line-through;
+}
+
+
+
