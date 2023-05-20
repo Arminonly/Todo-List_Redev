@@ -6,10 +6,10 @@ const ErrorPage = () => {
     <>
       <Result
         status="500"
-        subTitle="Sorry, something went wrong."
+        subTitle="Похоже-такой пользователь или email уже существуют."
         extra={
           <Link to={'/registry'}>
-            <Button type="primary">Try again</Button>
+            <Button type="primary">Попытайся снова</Button>
           </Link>
         }
       />
