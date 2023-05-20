@@ -14,7 +14,7 @@ const ExitBtn = () => {
         danger
         type="primary"
       >
-        Exit
+       Выход
       </Button>
     </Link>
   );

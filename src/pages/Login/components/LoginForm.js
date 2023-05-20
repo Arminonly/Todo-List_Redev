@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Form, Modal } from 'antd';
+import { Form} from 'antd';
 
 import Password from './Password';
 import Btn from './Btn';
 import Email from './Email';
+import ModalWarning from './ModalWarning';
+
 
 const LoginForm = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +40,8 @@ const LoginForm = () => {
       <Email />
       <Password />
       <Btn />
-      <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
+      <ModalWarning isOpen={  isOpen} setIsOpen={setIsOpen} />
+      
     </Form>
   );
 };
