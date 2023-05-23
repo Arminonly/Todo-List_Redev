@@ -34,7 +34,7 @@ const RegistryForm = () => {
     setValue(e.target.value);
   };
   const onFinish = async (values) => {
-    const url = 'https://first-node-js-app-r.herokuapp.com/api/users/register';
+    const url = process.env.REACT_APP_REGISTRY
     const result = await fetch(url, {
       method: 'POST',
       headers: {
