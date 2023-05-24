@@ -8,6 +8,8 @@ import Password from './Password';
 import IsMan from './IsMan';
 import AgeInput from './AgeInput';
 import Btn from './Btn';
+require('dotenv').config()
+
 const formItemLayout = {
   labelCol: {
     xs: {
@@ -27,6 +29,7 @@ const formItemLayout = {
   }
 };
 
+
 const RegistryForm = () => {
   const navigate = useNavigate();
   const [value, setValue] = useState(true);
@@ -35,7 +38,7 @@ const RegistryForm = () => {
   };
   const onFinish = async (values) => {
     const url = process.env.REACT_APP_REGISTRY
-    const result = await fetch(url, {
+     const result = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

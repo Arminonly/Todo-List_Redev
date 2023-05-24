@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form } from 'antd';
-
 import Password from './Password';
 import Btn from './Btn';
 import Email from './Email';
 import ModalWarning from './ModalWarning';
+require('dotenv').config()
 
 const LoginForm = () => {
   const [isOpen, setIsOpen] = useState(false);
