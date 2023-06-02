@@ -8,7 +8,6 @@ import Password from './Password';
 import IsMan from './IsMan';
 import AgeInput from './AgeInput';
 import Btn from './Btn';
-require('dotenv').config()
 
 const formItemLayout = {
   labelCol: {
@@ -28,7 +27,6 @@ const formItemLayout = {
     }
   }
 };
-
 
 const RegistryForm = () => {
   const navigate = useNavigate();
