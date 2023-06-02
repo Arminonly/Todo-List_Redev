@@ -3,6 +3,8 @@ import {Form, Radio } from 'antd';
 
 
 const IsMan = ({value,onChange}) => {
+  console.log(value);
+  
    
   return (
     <>
