@@ -1,7 +1,7 @@
 import React from 'react';
-import { Form, Radio, Select } from 'antd';
+import { Form, Select } from 'antd';
 
-const IsMan = () => {
+const Gender = () => {
   return (
     <>
       <Form.Item
@@ -22,4 +22,4 @@ const IsMan = () => {
   );
 };
 
-export default IsMan;
+export default Gender;

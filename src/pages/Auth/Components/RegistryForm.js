@@ -1,12 +1,11 @@
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form } from 'antd';
 import UserName from './UserName';
 import Email from './Email';
 import Password from './Password';
-import IsMan from './IsMan';
 import AgeInput from './AgeInput';
 import Btn from './Btn';
+import Gender from './Gender';
 
 const formItemLayout = {
   labelCol: {
@@ -29,10 +28,6 @@ const formItemLayout = {
 
 const RegistryForm = () => {
   const navigate = useNavigate();
-  const [value, setValue] = useState('male');
-  const onChange = (e) => {
-    setValue(e.target.value);
-  };
   const onFinish = async (values) => {
     const url = process.env.REACT_APP_REGISTRY
      const result = await fetch(url, {
@@ -72,7 +67,7 @@ const RegistryForm = () => {
         <UserName />
         <Email />
         <Password />
-        <IsMan value={value} onChange={onChange} />
+        <Gender />
         <AgeInput />
         <Btn onReset={onReset} />
       </Form>
