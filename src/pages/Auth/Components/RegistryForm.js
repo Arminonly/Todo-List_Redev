@@ -29,8 +29,8 @@ const formItemLayout = {
 const RegistryForm = () => {
   const navigate = useNavigate();
   const onFinish = async (values) => {
-    const url = process.env.REACT_APP_REGISTRY
-     const result = await fetch(url, {
+    const url = process.env.REACT_APP_REGISTRY;
+    const result = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -38,8 +38,6 @@ const RegistryForm = () => {
       body: JSON.stringify(values)
     });
     const data = await result.json();
-    console.log(data);
-    
     if (!data.id) {
       navigate('/err');
     } else {
@@ -63,7 +61,6 @@ const RegistryForm = () => {
         }}
         scrollToFirstError
       >
- 
         <UserName />
         <Email />
         <Password />
