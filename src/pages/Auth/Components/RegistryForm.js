@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form } from 'antd';
-import Name from './Name';
+// import Name from './Name';
 import UserName from './UserName';
 import Email from './Email';
 import Password from './Password';
@@ -30,7 +30,7 @@ const formItemLayout = {
 
 const RegistryForm = () => {
   const navigate = useNavigate();
-  const [value, setValue] = useState(true);
+  const [value, setValue] = useState('male');
   const onChange = (e) => {
     setValue(e.target.value);
   };
@@ -44,7 +44,9 @@ const RegistryForm = () => {
       body: JSON.stringify(values)
     });
     const data = await result.json();
-    if (!data.ID) {
+    console.log(data);
+    
+    if (!data.id) {
       navigate('/err');
     } else {
       navigate('/ok');
@@ -67,7 +69,7 @@ const RegistryForm = () => {
         }}
         scrollToFirstError
       >
-        <Name />
+        {/* <Name /> */}
         <UserName />
         <Email />
         <Password />

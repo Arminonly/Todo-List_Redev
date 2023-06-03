@@ -8,6 +8,7 @@ import Protected from './components/Protected';
 import LoginPage from './pages/Login/LoginPage';
 
 function App() {
+  
   return (
     <div className="wrapper">
       <Routes>

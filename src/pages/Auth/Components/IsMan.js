@@ -1,22 +1,22 @@
 import React from 'react';
-import { Form, Radio } from 'antd';
+import { Form, Radio, Select } from 'antd';
 
-const IsMan = ({ value, onChange }) => {
+const IsMan = () => {
   return (
     <>
       <Form.Item
-        name="isMan"
-        label="isMan"
+        name="gender"
+        label="gender"
         rules={[
           {
             required: true
           }
         ]}
       >
-        <Radio.Group onChange={onChange} value={value}>
-          <Radio value={false}>male</Radio>
-          <Radio value={true}>female</Radio>
-        </Radio.Group>
+        <Select placeholder="select your gender">
+          <Select.Option value={'male'}>Male</Select.Option>
+          <Select.Option value={'female'}>Female</Select.Option>
+        </Select>
       </Form.Item>
     </>
   );

@@ -22,15 +22,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
-# curl -X 'POST' \
-#   'https://todo-redev.herokuapp.com/api/users/register' \
-#   -H 'accept: application/json' \
-#   -H 'Content-Type: application/json' \
-#   -d '{
-#   "username": "marry4564522",
-#   "email": "exampleg4f45f@example.com",
-#   "password": "1Sq_22qw",
-#   "gender": "female",
-#   "age": 25
-# }'
