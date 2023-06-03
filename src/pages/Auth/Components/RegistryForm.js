@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form } from 'antd';
-// import Name from './Name';
 import UserName from './UserName';
 import Email from './Email';
 import Password from './Password';
@@ -69,7 +68,7 @@ const RegistryForm = () => {
         }}
         scrollToFirstError
       >
-        {/* <Name /> */}
+ 
         <UserName />
         <Email />
         <Password />
