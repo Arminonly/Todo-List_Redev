@@ -10,7 +10,7 @@ const LoginForm = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const onFinish = async values => {
-    const url = `${process.env.REACT_APP_LOGIN}login`;
+    const url = `https://todo-redev.herokuapp.com/api/auth/login`;
     const result = await fetch(url, {
       method: 'POST',
       headers: {
